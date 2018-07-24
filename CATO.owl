@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#"
+     xml:base="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-06-25</owl:versionInfo>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The phenotypic mosaic ontology that describes classes related to distinct types of mosaics.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#database_cross_reference -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#database_cross_reference">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#definition">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#caste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#caste"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#anatomical_quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#anatomical_quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#organismal_quality"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s phenotypic organization.</definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anatomical quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#aptery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#aptery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#anatomical_quality"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical quality inhering in a bearer by virtue of the bearer&apos;s having developed or reduced/fused axillary sclerites, with absence of wings.</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#behavioral_quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#behavioral_quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#organismal_quality"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s behavior aggregate of the responses or reactions or movements in a given situation.</definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behavioral quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#biological_sex_quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#biological_sex_quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#organismal_quality"/>
+        <database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000047</database_cross_reference>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological sex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#brachyptery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#brachyptery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#anatomical_quality"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical quality inhering in a bearer by virtue of the bearer&apos;s having developed and individualized or fused axillary sclerites, with reduced wings.</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#defense -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#defense">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#behavioral_quality"/>
+        <database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SIBO:0000145</database_cross_reference>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behavioral quality inhering in a bearer by virtue of the bearer&apos;s ability to perform direct or indirect defensive behavior upon a resource.</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#&apos;phenotypic_sex&apos;"/>
+        <database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000383</database_cross_reference>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an individual or a population that only produces gametes that can be fertilised by male gametes.</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#fertile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#fertile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#reproductive_quality"/>
+        <database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000955</database_cross_reference>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fertility quality inhering in a bearer by virtue of the bearer&apos;s being capable of initiating, sustaining, or supporting reproduction.</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#foraging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#foraging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#behavioral_quality"/>
+        <database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SIBO:0000152</database_cross_reference>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behavioral quality inhering in a bearer by virtue of the bearer&apos;s ability to search for a generalized or specific trophic resource.</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#macroptery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#macroptery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#anatomical_quality"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical quality inhering in a bearer by virtue of the bearer&apos;s having developed and individualized or fused axillary sclerites, with fully developed wings.</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#male -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#male">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#&apos;phenotypic_sex&apos;"/>
+        <database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000384</database_cross_reference>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#multicellular_organismal_process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#multicellular_organismal_process">
+        <database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0032501</database_cross_reference>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any biological process, occurring at the level of a multicellular organism, pertinent to its function.</definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multicellular organismal process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#organismal_quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#organismal_quality">
+        <database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</database_cross_reference>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality that inheres in an entire organism or part of an organism.</definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organismal quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#multicellular_organismal_process"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process in which individuals that have the potential to develop any of several possible distinct developmental paths have their individual developmental fates determined in response to environmental and/or genetic cues.</definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyphenic determination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#reproductive_quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#reproductive_quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#organismal_quality"/>
+        <database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000186</database_cross_reference>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s behavior aggregate of the responses or reactions or movements in a given situation.</definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproductive quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#resource_processing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#resource_processing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#behavioral_quality"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behavioral quality inhering in a bearer by virtue of the bearer&apos;s ability to modify a generalized or specific resource by physical or chemical means.</definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resource processing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#sterile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#sterile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#reproductive_quality"/>
+        <database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000956</database_cross_reference>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fertility quality inhering in a bearer by virtue of the bearer&apos;s being incapable of initiating, sustaining, or supporting reproduction.</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#&apos;phenotypic_sex&apos; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#&apos;phenotypic_sex&apos;">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#biological_sex_quality"/>
+        <database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001894</database_cross_reference>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an individual based upon phenotypic composition of mature individuals.</definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenotypic sex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination,_influence_by_environmental_factors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination,_influence_by_environmental_factors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination"/>
+        <database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0048651</database_cross_reference>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process in which individuals that have the potential to develop any of several possible distinct developmental paths have their individual developmental fates determined in response to environmental cues.</definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyphenic determination, influence by environmental factors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination,_influence_by_genetic_factors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination,_influence_by_genetic_factors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination"/>
+        <database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0048652</database_cross_reference>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process in which individuals that have the potential to develop any of several possible distinct developmental paths have their individual developmental fates determined in response to genetic cues.</definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyphenic determination, influence by genetic factors</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
